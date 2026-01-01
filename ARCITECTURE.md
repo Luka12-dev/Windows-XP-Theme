@@ -50,13 +50,13 @@ The Windows XP theme transformation follows these core principles:
 
 ```
 ┌─────────────────────────────────────────────────────┐
-│                   User Interface                     │
+│                   User Interface                    │
 │  (START_HERE.bat / PowerShell Scripts / Python)     │
 └──────────────────────┬──────────────────────────────┘
                        │
                        ▼
 ┌─────────────────────────────────────────────────────┐
-│              Orchestration Layer                     │
+│              Orchestration Layer                    │
 │  • run.ps1 (Apply Theme)                            │
 │  • back_to_win11.ps1 (Restore)                      │
 │  • run-test.ps1 (Test Mode)                         │
@@ -72,7 +72,7 @@ The Windows XP theme transformation follows these core principles:
           └────────────┼────────────┘
                        ▼
 ┌─────────────────────────────────────────────────────┐
-│              Windows 11 System                       │
+│              Windows 11 System                      │
 │  • User Registry (HKCU)                             │
 │  • Desktop Environment                              │
 │  • Explorer Shell                                   │
@@ -960,14 +960,14 @@ The theme transformation prioritizes safety through multiple layers of protectio
 
 ```
 ┌─────────────────────────────────────┐
-│    Administrator Check Layer         │
+│    Administrator Check Layer        │
 │  • Verify elevation before changes  │
 │  • Clear error messages if not admin│
 └─────────────┬───────────────────────┘
               │
               ▼
 ┌─────────────────────────────────────┐
-│    Validation Layer                  │
+│    Validation Layer                 │
 │  • Check file existence             │
 │  • Verify backup directory          │
 │  • Validate asset integrity         │
@@ -975,7 +975,7 @@ The theme transformation prioritizes safety through multiple layers of protectio
               │
               ▼
 ┌─────────────────────────────────────┐
-│    Backup Layer                      │
+│    Backup Layer                     │
 │  • Export all registry keys         │
 │  • Save all current settings        │
 │  • Store in JSON/REG formats        │
@@ -983,7 +983,7 @@ The theme transformation prioritizes safety through multiple layers of protectio
               │
               ▼
 ┌─────────────────────────────────────┐
-│    Modification Layer                │
+│    Modification Layer               │
 │  • Only HKCU modifications          │
 │  • No protected file changes        │
 │  • Graceful error handling          │
@@ -991,7 +991,7 @@ The theme transformation prioritizes safety through multiple layers of protectio
               │
               ▼
 ┌─────────────────────────────────────┐
-│    Verification Layer                │
+│    Verification Layer               │
 │  • Confirm changes applied          │
 │  • Log any failures                 │
 │  • Provide user feedback            │
@@ -1162,17 +1162,7 @@ foreach ($file in $RequiredFiles) {
 
 **Disk Space:**
 ```
-Script Package:        ~8 MB
-- Icons (PNG):         ~2 MB
-- Icons (ICO):         ~2 MB
-- Wallpaper:           6.7 MB
-- Sounds:              ~100 KB
-- Scripts:             ~100 KB
-
-Runtime Space:         ~10 MB
-- Backup:              ~50 KB
-- Icon copies:         ~2 MB (optional)
-- Temp files:          Minimal
+The size is 250mb (Mostly Icons.)
 ```
 
 **Memory Usage:**

@@ -418,7 +418,9 @@ For changing the boot screen to Windows XP animation.
 
 ## 📸 Screenshots
 
-![MainWindow]()
+![](assets/Main.png)
+![](assets/ClassicTheme.png)
+![Before WindowsXPTheme](assets/BeforeWindowsXPTheme.png)
 
 ---
 
