@@ -1,0 +1,213 @@
+========================================
+WINDOWS XP BOOT SCREEN GUIDE
+========================================
+
+The Windows XP boot screen image is included in:
+Boot/WindowsXP_Boot.gif
+
+However, changing the Windows 11 boot screen requires additional tools
+due to security restrictions.
+
+========================================
+WHY CAN'T WE CHANGE IT AUTOMATICALLY?
+========================================
+
+Windows Security:
+-----------------
+- Boot screen is protected by Secure Boot
+- Requires UEFI firmware modification
+- Cannot be changed via registry alone
+- Windows defends boot process integrity
+
+Safety First:
+-------------
+- Modifying boot files incorrectly can prevent Windows from starting
+- We don't include automatic boot modification for safety
+- Manual process ensures you understand the risks
+
+========================================
+METHOD 1: HackBGRT (RECOMMENDED)
+========================================
+
+HackBGRT is a safe, open-source tool for changing boot screen.
+
+STEP 1: Download HackBGRT
+--------------------------
+Official: https://github.com/Metabolix/HackBGRT/releases
+Download: HackBGRT-X.X.zip
+
+STEP 2: Prepare XP Boot Image
+------------------------------
+1. Open Boot/WindowsXP_Boot.gif in image editor
+2. Convert to PNG or BMP format
+3. Resize to your screen resolution (1920x1080, etc.)
+4. Save as: splash.bmp
+
+STEP 3: Install HackBGRT
+-------------------------
+1. Disable Secure Boot in BIOS/UEFI (required)
+2. Extract HackBGRT
+3. Run setup.exe as Administrator
+4. Follow installation wizard
+5. Place splash.bmp in HackBGRT config folder
+6. Reboot
+
+STEP 4: Re-enable Secure Boot (Optional)
+-----------------------------------------
+HackBGRT supports Secure Boot if configured properly.
+See HackBGRT documentation.
+
+========================================
+METHOD 2: WINDOWS BOOT LOGO CHANGER
+========================================
+
+Another tool option (use with caution).
+
+Requirements:
+-------------
+- Windows 10/11
+- Administrator access
+- Backup of system files
+
+Steps:
+------
+1. Search for "Windows Boot Logo Changer"
+2. Download from trusted source
+3. Follow tool instructions
+4. Use WindowsXP_Boot.gif (converted to BMP)
+
+WARNING: Some tools may be outdated or unsafe.
+Only use from trusted sources.
+
+========================================
+METHOD 3: MANUAL UEFI MODIFICATION (ADVANCED)
+========================================
+
+FOR EXPERTS ONLY - Can break your system!
+
+This involves:
+- Accessing UEFI firmware
+- Modifying boot graphics
+- Risk of bricking system
+
+NOT RECOMMENDED unless you're experienced with UEFI.
+
+========================================
+LOGON SCREEN (EASIER ALTERNATIVE)
+========================================
+
+While boot screen is difficult, you CAN change the logon screen!
+
+STEP 1: Convert Boot Image
+---------------------------
+1. Open Boot/WindowsXP_Boot.gif
+2. Export first frame as JPG
+3. Resize to screen resolution
+4. Save as: xp_logon.jpg
+
+STEP 2: Apply as Logon Background
+----------------------------------
+1. Press Win + I (Settings)
+2. Personalization > Lock screen
+3. Background > Picture
+4. Browse to xp_logon.jpg
+5. Apply
+
+Result: You'll see XP boot image on login screen!
+
+========================================
+BOOT SCREEN COMPARISON
+========================================
+
+What We Provide:
+----------------
+- WindowsXP_Boot.gif (animated GIF)
+- Original Windows XP boot animation
+- Ready for conversion and use
+
+What You Need to Do:
+--------------------
+1. Convert GIF to BMP/PNG
+2. Use HackBGRT or similar tool
+3. Install with Secure Boot disabled
+4. Reboot to see XP boot screen
+
+Logon Screen Alternative:
+--------------------------
+- Much easier to change
+- No special tools needed
+- Safe and reversible
+- Similar visual effect
+
+========================================
+RECOMMENDED APPROACH
+========================================
+
+Best Practice:
+--------------
+1. Apply XP theme with our scripts (SAFE)
+2. Set XP image as logon screen (EASY)
+3. If you want boot screen, use HackBGRT (ADVANCED)
+
+This gives you:
+---------------
+- XP logon screen (easy)
+- Full XP theme (automatic)
+- Optional: XP boot screen (with HackBGRT)
+
+========================================
+SAFETY REMINDERS
+========================================
+
+Always Safe:
+------------
+- Using run.ps1 and back_to_win11.ps1
+- Rebooting with theme active
+- Shutting down with theme active
+- Restoring to Windows 11
+
+Requires Caution:
+-----------------
+- Modifying boot screen (use HackBGRT)
+- Disabling Secure Boot
+- Manual UEFI modifications
+
+Our Scripts:
+------------
+- Never modify boot loader
+- Never touch system files
+- Only user-level changes
+- 100% safe to reboot
+
+========================================
+CONCLUSION
+========================================
+
+Boot Screen:
+------------
+- Included: WindowsXP_Boot.gif
+- Requires: HackBGRT or similar tool
+- Difficulty: Advanced
+- Safety: Use trusted tools only
+
+Logon Screen:
+-------------
+- Easy alternative to boot screen
+- Use same image
+- Built-in Windows feature
+- 100% safe
+
+Rebooting:
+----------
+- Completely safe with theme applied
+- Theme persists after reboot
+- No boot issues
+- Windows starts normally
+
+Recommendation:
+---------------
+1. Apply theme (automatic - safe)
+2. Set logon screen (easy - safe)  
+3. Boot screen (optional - advanced)
+
+========================================
